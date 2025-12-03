@@ -1,0 +1,79 @@
+.scenario-actions-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--secondary);
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+.form-container {
+  flex: 1;
+  background-color: var(--primary);
+  padding: var(--mb-3);
+  margin-left: 300px; /* offset for fixed sidebar */
+  min-height: 100vh;
+}
+
+.form-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0;
+}
+
+.form-subtitle {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1-5);
+}
+
+.form-content {
+  background-color: var(--primary-sub);
+  padding: var(--mb-1-5);
+  border-radius: var(--radius);
+}
+
+.scenario-actions-form label {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  display: block;
+  margin-top: var(--mb-0-5);
+}
+
+.scenario-actions-form textarea,
+.scenario-actions-form input[type="text"] {
+  width: 100%;
+  padding: var(--mb-0-5);
+  font-size: var(--small-font-size);
+  border: 1px solid var(--secondary-sub);
+  border-radius: var(--radius-sm);
+  background-color: var(--primary);
+  color: var(--text-color);
+  margin-top: var(--mb-0-25);
+}
+
+.scenario-actions-form textarea {
+  resize: vertical;
+}
+
+.scenario-actions-form textarea:focus,
+.scenario-actions-form input[type="text"]:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.save-button {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: var(--mb-0-75) var(--mb-1-5);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: var(--mb-1-5);
+}
+
+.save-button:hover {
+  background-color: #c9aa5a;
+}

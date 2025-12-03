@@ -1,0 +1,232 @@
+
+:root{
+  /* palette extracted from screenshots */
+  --navy-900: #13223D;         /* dark text and logo */
+  --navy-800: #213050;         /* navy card and headings */
+  --ink-600:  #6B768C;         /* muted body text */
+  --bg-slab:  #E5E9EF;         /* light panel background */
+  --page:     #FFFFFF;         /* white panel */
+  --gold-500: #D8BE72;         /* buttons, accent */
+  --gold-600: #CDAF58;         /* pressed */
+  --input-bd: #E5E9EF;         /* input outline */
+  --shadow-1: 0 10px 30px rgba(19,34,61,0.10);
+  --radius-lg: 22px;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{margin:0;font-family:Inter, system-ui, -apple-system, Segoe UI, Arial, sans-serif;color:var(--navy-900);background:#f7f8fb}
+
+.pa-wrap{display:flex;align-items:center;justify-content:center;min-height:100%}
+
+.pa-shell{
+  width:min(1200px, 94vw);
+  height:min(760px, 92vh);
+  border:0;
+  position:relative;
+  border-radius:18px;
+  overflow:hidden;
+  background:var(--page);
+  box-shadow:var(--shadow-1);
+  display:grid;
+  grid-template-columns: 54% 46%;
+}
+
+/* flip backgrounds per screen to match images */
+.pa-shell.login .pa-left{background:var(--page)}
+.pa-shell.login .pa-right{background:var(--bg-slab)}
+.pa-shell.signup .pa-left{background:var(--bg-slab)}
+.pa-shell.signup .pa-right{background:var(--page)}
+
+.pa-left{
+  padding:56px 64px;
+  display:flex;flex-direction:column;
+}
+.pa-right{
+  display:flex;align-items:center;justify-content:center;position:relative;
+}
+
+.pa-brand{display:flex;align-items:center;gap:14px}
+.pa-logo{width:44px;height:44px}
+.pa-brand h1{margin:0;font-weight:800;font-size:28px;color:var(--navy-800)}
+
+.pa-main{margin-top:28px;max-width:560px}
+.pa-title{margin:0 0 14px 0;font-weight:800;font-size:38px;line-height:1.2;color:var(--navy-800)}
+.pa-sub{margin:0 0 26px 0;color:var(--ink-600);font-size:16px;max-width:520px}
+
+.pa-field{display:block;margin:18px 0}
+.pa-label{display:block;margin:0 0 10px 2px;font-weight:700;color:var(--navy-900);font-size:18px}
+.pa-input{
+  width:520px;max-width:100%;
+  height:52px;padding:0 18px;border-radius:18px;border:1px solid var(--input-bd);
+  background:#fff;font-size:15px;outline:none;
+  box-shadow:0 1px 0 rgba(19,34,61,0.04) inset;
+}
+.pa-input::placeholder{color:#A8B1C0}
+
+.pa-meta{margin-top:10px;font-size:15px;color:var(--ink-600)}
+.pa-meta a{color:var(--navy-800);font-weight:700;text-decoration:none}
+
+.pa-hero{display:flex;flex-direction:column;align-items:center;gap:18px}
+.pa-illus{width:420px;max-width:88%;height:auto;display:block}
+.pa-hero-copy{text-align:center;margin-top:8px}
+.pa-hero-h1{font-size:30px;font-weight:800;color:var(--navy-800)}
+.pa-hero-h2{font-size:30px;font-weight:800;color:var(--gold-500);margin-top:6px}
+
+.pa-cta{
+  margin-top:18px;width:420px;max-width:88%;
+  height:58px;border:none;border-radius:26px;
+  background:var(--gold-500);color:var(--navy-800);font-weight:800;font-size:18px;cursor:pointer;
+}
+.pa-cta:active{background:var(--gold-600)}
+
+/* --- PersonaStack (right panel) --- */
+.persona-stack {
+  position: relative;
+  width: clamp(240px, 32vw, 340px);
+  height: clamp(300px, 45vw, 450px);
+  margin: 0 auto 1rem;
+}
+
+.ps-card {
+  position: absolute;
+  border-radius: 20px;
+  inset: auto; /* allow explicit sizing below */
+}
+
+/* Layers (translated from your Figma values, scaled responsively) */
+.ps-card-1 {
+  width: 85%;
+  height: 78%;
+  left: -5%;
+  top: 0%;
+  background: #DDBD65;
+  transform: rotate(-10.57deg);
+}
+.ps-card-2 {
+  width: 82%;
+  height: 78%;
+  left: 15%;
+  top: 9%;
+  background: #1D3153;
+  transform: rotate(2.3deg);
+}
+.ps-card-3 {
+  width: 86%;
+  height: 77%;
+  left: 30%;
+  top: 18%;
+  background: #6EA2C8;
+  transform: rotate(6.58deg);
+}
+.ps-card-4 {
+  box-sizing: border-box;
+  width: 84%;
+  height: 75%;
+  left: 31%;
+  top: 19%;
+  background: #E4E9F0;
+  border: 1px solid #000;
+  transform: rotate(6.58deg);
+  overflow: hidden;
+}
+
+/* Text + badge positions inside top card */
+.ps-name {
+  position: absolute;
+  top: 22%;
+  right: -4%;
+  font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 3.2vw, 32px);
+  line-height: 1.2;
+  color: #000;
+  transform: rotate(6.58deg);
+}
+.ps-role {
+  position: absolute;
+  top: 31%;
+  right: 5%;
+  font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(14px, 2.2vw, 20px);
+  line-height: 1.2;
+  transform: rotate(6.58deg);
+  color: #000;
+}
+.ps-badge {
+  position: absolute;
+  width: 45%;
+  height: auto;
+  right: 6%;
+  top: 39%;
+  transform: rotate(6.58deg);
+  object-fit: contain;
+  pointer-events: none;
+  user-select: none;
+}
+.ps-tag {
+  position: absolute;
+  bottom: 10%;
+  right: 13%;
+  font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(18px, 3.2vw, 28px);
+  transform: rotate(6.58deg);
+  color: #000;
+}
+
+/* Optional: a faint background image if illusSrc provided */
+.pa-illus-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.04;
+  pointer-events: none;
+}
+
+/* Keep existing .pa-hero container as-is; ensure it can stack children */
+.pa-hero {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+/* Tweak hero copy so it doesn't overlap the cards */
+.pa-hero-copy {
+  position: relative;
+  margin-top: 0.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Button sits above the stack */
+.pa-cta {
+  position: relative;
+  z-index: 1;
+  margin-top: 0.75rem;
+}
+
+/* Small screens: scale the stack down and center */
+@media (max-width: 980px) {
+  .persona-stack {
+    transform: scale(0.9);
+    transform-origin: top center;
+  }
+}
+@media (max-width: 780px) {
+  .persona-stack {
+    transform: scale(0.8);
+  }
+}
+
+/* signup-specific override */
+.pa-shell.signup .ps-card-4 {
+  width: 84%;
+  height: 50%;
+  left: 29%;
+  top: 44%;
+}

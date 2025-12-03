@@ -1,0 +1,14 @@
+.brief-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px}
+.card h3{margin:0 0 10px;color:#274a7e}
+.stakeholders{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.person{border:1px solid var(--line);border-radius:14px;padding:16px;background:#f7fbff}
+.person h4{margin:6px 0;color:#274a7e}
+.person .muted{color:var(--muted);font-size:13px}
+.quiz-card{background:#edf2fb;border-radius:16px;padding:26px;text-align:center}
+.options{display:grid;gap:12px;margin:20px 0}
+.option{
+  border:2px solid #d7e0ef;border-radius:12px;padding:14px;text-align:left;background:white
+}
+.option.selected{border-color:#7aa4e3;background:#f3f7ff}
+.explain{margin-top:12px;color:#2b3b55}

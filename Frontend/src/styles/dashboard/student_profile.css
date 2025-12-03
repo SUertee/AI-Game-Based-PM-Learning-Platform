@@ -1,0 +1,104 @@
+/* Profile Styles */
+.profile-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--secondary); /* navy background */
+    display: grid;
+    place-items: center;
+}
+
+.avatar-icon {
+    font-size: 2rem;
+    color: var(--primary); /* white icon */
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.profile-email {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.profile-section {
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--secondary); /* strong headers */
+}
+
+.section-box {
+    background: var(--primary-sub);
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+/* Learning Summary */
+.summary-grid {
+    display: flex;
+    gap: 1rem;
+}
+
+.summary-box {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary-sub); /* subtle background */
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--secondary); /* highlight numbers/text */
+}
+
+/* Badges */
+.badges-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--primary-sub); /* gray/light background for locked */
+    display: grid;
+    place-items: center;
+    font-size: 1.2rem;
+    color: var(--muted);
+    transition: transform 0.2s ease;
+}
+
+.badge.earned {
+    background: var(--secondary); /* navy for earned */
+    color: var(--primary); /* white star */
+}
+
+.badge:hover {
+    transform: scale(1.05); /* small hover effect */
+}

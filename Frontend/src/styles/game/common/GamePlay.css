@@ -1,0 +1,327 @@
+/* Center everything and limit page width to the middle of the screen */
+.gp-page {
+  min-height: 10vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background: var(--bg);
+  padding: 24px;
+}
+
+.gp-wrap {
+  width: 100%;
+  max-width: 1200px;    /* control total width */
+  margin: 0 auto;       /* center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* vertical center if parent is full height */
+}
+
+/* Pinned nav buttons */
+.gp-back {
+  position: absolute;
+  top: 16px; left: 16px;
+  width: 36px; height: 36px;
+  border: 0; border-radius: 50%;
+  cursor: pointer;
+  background: #DDBD65;              /* your button color */
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+.gp-next {
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;                      /* space between text and circle */
+
+  font-weight: 700;
+  font-size: 18px;
+  color: #1D3153;                /* text color */
+  text-decoration: none;         /* remove link underline */
+}
+
+.gp-next-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+  background: #DDBD65;           /* circle color */
+  color: #fff;                   /* arrow color */
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Two-column layout: brief left (wider), personas right */
+.gp-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.gp-title {
+  color: #1D3153;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 50px;   /* 👈 adds gap below the title */
+}
+
+.gp-subtitle { 
+  color: #1D3153; 
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.brief-block {
+  background: var(--box);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Ensure children stack vertically on this page */
+.gp-wrap.scenario-intro-page {
+  display: flex;          /* if parent was grid, you can also use display:block */
+  flex-direction: column; /* stack children */
+  align-items: center;    /* keep your content centered horizontally */
+}
+
+/* Make each section take full row width (while respecting its own max-width) */
+.gp-wrap.scenario-intro-page > section {
+  width: 100%;
+}
+
+/* ===== Horizontal scroller (shows 2 cards; scrolls for more) ===== */
+.persona-scroller {
+  width: 520px;               /* 2 * 240 + ~gap; adjust if you tweak card width */
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 6px;         /* space for hidden scrollbar overlay */
+}
+
+.persona-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;          /* shrink-wrap to children so scrolling works */
+}
+
+/* Hide scrollbar (webkit) */
+.persona-scroller::-webkit-scrollbar { height: 8px; }
+.persona-scroller::-webkit-scrollbar-thumb { background: #e0e6f1; border-radius: 999px; }
+.persona-scroller::-webkit-scrollbar-track { background: transparent; }
+
+
+/* ===== Top Steps (progress tracker) ===== */
+.top-steps {
+  max-width: 1000px;
+  margin: 0 auto 28px;
+}
+
+.top-tooltips {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  align-items: end;
+  margin-bottom: 10px;
+}
+
+.top-tip {
+  position: relative;
+  background: #fff;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 1px 4px rgba(12,12,13,.1), 0px 1px 4px rgba(12,12,13,.05);
+  border-radius: 8px;
+  padding: 6px 10px;
+  text-align: center;
+  color: #1D3153;
+}
+.top-tip::after,
+.top-tip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  bottom: -4px;
+  background: #fff;
+}
+.top-tip::before {
+  background: #D9D9D9;
+  bottom: -5px;
+  z-index: -1;
+}
+.top-tip-title {
+  font: 600 16px/22px Inter, system-ui, sans-serif;
+}
+.top-tip-sub {
+  font: 400 14px/20px Inter, system-ui, sans-serif;
+}
+
+/* --- progress line + steps --- */
+.top-track {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto 1fr auto;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.top-line {
+  height: 3px;
+  background: #6EA2C8;
+  width: 100%;
+  border-radius: 999px;
+}
+.top-step {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  color: #1D3153;
+  border: 3px solid #6EA2C8;
+  border-radius: 50%;
+  font: 400 20px/1 "Open Sans", system-ui, sans-serif;
+  background: #fff;
+}
+
+.top-step svg {
+  display: block;          /* remove inline spacing */
+  width: 20px;
+  height: 20px;
+  margin: auto;            /* center horizontally */
+}
+
+/* Center the whole list within its column */
+.info-list {
+  max-width: 956px;
+  display: grid;
+  gap: 16px;
+
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 auto;             /* center horizontally */
+  position: sticky;
+  top: 24px;
+  z-index: 20;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  padding-right: 6px;
+  align-items: center;         /* center children */
+}
+
+/* Wrapper around each row + its content */
+.info-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Each row is a rounded box that can grow to show content */
+.info-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 0fr; /* collapsed content row */
+  align-items: center;
+  background: var(--box);
+  border-radius: 30px;
+  padding: 18px 20px 18px 24px;
+  transition: box-shadow .25s ease, background .25s ease;
+}
+
+/* when open, allow content to take space */
+.info-row.is-open {
+  grid-template-rows: auto 1fr;
+}
+
+/* Title */
+.info-row-title {
+  color: var(--ink);
+  font: 700 25px/42px "Open Sans", system-ui, sans-serif;
+}
+
+/* Gold circular icon */
+.info-row-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #DDBD65;
+  color: #1D3153;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12) inset, 0 1px 2px rgba(0,0,0,.06);
+  transition: transform .2s ease;
+}
+.info-row-icon svg { transition: transform .2s ease; }
+.info-row-icon[aria-expanded="true"] svg { transform: rotate(90deg); }
+
+/* Separate content box */
+.info-box {
+  margin-top: 12px;
+  padding: 16px 24px 16px 24px; /* left/right 24px */
+  background: #E4E9F0;
+  border-radius: 30px;
+  color: #2b2b2b;
+  font: 400 15px/22px "Open Sans", system-ui, sans-serif;
+  
+}
+
+/* The expanding area inside the same box */
+.info-row-content {
+  grid-column: 1 / -1;   /* span both columns */
+  overflow: hidden;
+  max-height: 0;         /* collapsed */
+  transition: max-height .3s ease, padding-top .3s ease;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* When open, reveal content smoothly */
+.info-row.is-open .info-row-content {
+  max-height: 280px;     /* cap to avoid huge jumps; content will scroll if taller */
+  padding-top: 12px;
+  margin-top: 8px;
+}
+
+/* Optional: inner scrolling if content is long */
+.info-row-content > * {
+  margin: 0;
+}
+.info-row.is-open .info-row-content {
+  overflow: auto;
+}
+
+.timebar-wrapper {
+  height: 8px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.timebar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #ff9800, #f44336);
+  transition: width 1s linear;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .info-row-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .info-row { border-radius: 16px; }
+}

@@ -1,0 +1,148 @@
+/* src/theme.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Outer fixed sidebar */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 19rem;          
+  height: 100vh;
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  font-family: var(--body-font);
+}
+
+/* Logo section */
+.sidebar-logo-wrap {
+  padding: 1.5rem 0;
+}
+
+.sidebar-logo {
+  width: 75px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Content section */
+.sidebar-content {
+  background-color: var(--primary);
+  padding: var(--mb-1);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 90%;
+}
+
+/* Title styling */
+.sidebar-title {
+  font-size: var(--medium-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-1);
+}
+
+/* Divider */
+.sidebar-divider {
+  height: 1px;
+  background-color: var(--text-color);
+  margin: var(--mb-1) 0;
+  border: none;
+}
+
+/* Steps list */
+.sidebar-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.step-item {
+  font-size: var(--small-font-size);
+  padding: var(--mb-0-5) var(--mb-1);
+  margin-bottom: var(--mb-0-5);
+  border-radius: var(--radius-sm);
+  color: var(--text-color);
+}
+
+.step-item.completed {
+  color: var(--secondary-sub);
+}
+
+.step-item.active {
+  background-color: var(--accent);
+  color: var(--primary);
+  font-weight: var(--font-medium);
+}
+
+.step-label {
+  display: block;
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+}
+
+.step-description {
+  font-size: var(--smaller-font-size);
+  color: var(--text-muted, #666);
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+:root {
+  /* ===== Layout ===== */
+  --header-height: 3rem;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+
+  /* ===== Colors (60-30-10 scheme) ===== */
+  --primary: #ffffff;       /* 60% - base background */
+  --primary-sub: #e4e9f0;   /* subtle background, cards, surfaces */
+
+  --secondary: #1d3153;     /* 30% - strong text, headers */
+  --secondary-sub: #6ea2c8; /* accents, highlights */
+
+  --accent: #ddbd65;        /* 10% - buttons, CTAs */
+
+  /* Semantic Colors */
+  --title-color: var(--secondary);
+  --text-color: #444444;
+  --body-color: var(--primary);
+  --container-color: var(--primary-sub);
+
+  /* ===== Typography ===== */
+  --body-font: "Poppins", sans-serif;
+
+  /* Font sizes (1rem = 16px) */
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* Font weights */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /* ===== Spacing (margin bottom) ===== */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /* ===== Z-index ===== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}

@@ -1,0 +1,141 @@
+.quiz-config-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 100vw;
+  height: auto;
+  margin: 0;
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+/* Form area */
+.form-container {
+  flex: 1;
+  background-color: var(--primary);
+  padding: var(--mb-1-5);
+  height: 100%;
+}
+
+.form-content {
+  background-color: var(--primary-sub);
+  padding: var(--mb-1-5);
+  border-radius: var(--radius);
+}
+
+/* Titles */
+.form-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0;
+}
+
+.form-subtitle {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1-5);
+}
+
+/* Layout helpers */
+.form-row {
+  display: flex;
+  gap: var(--mb-2);
+  margin-bottom: var(--mb-0-5);
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-content label {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+.form-content #title, #passThreshold, #numQuestions {
+  height: 2.5rem;
+  padding: var(--mb-0-5);
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.form-content #description {
+  height: 5rem;
+  padding: var(--mb-0-5);
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+  text-align: top;
+}
+
+textarea {
+  resize: vertical; /* allow resizing if you want */
+  padding: var(--mb-0-5);
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  vertical-align: top; /* ensures text starts at the top */
+}
+
+.option-title {
+  font-weight: var(--font-medium);
+  display: block;
+}
+
+.option-description {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+/* Save button */
+.save-button {
+  background-color: var(--accent);
+  color: var(--text-color);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 0;
+}
+
+.save-button:hover {
+  background-color: #c9aa5a;
+}
+
+/* Container to hold both checkboxes side by side */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10%; /* space between the two checkboxes */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Individual checkbox label styling */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+/* Make checkboxes slightly larger for better UX */
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--secondary-sub); /* blue tint for modern browsers */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+  .checkbox-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+

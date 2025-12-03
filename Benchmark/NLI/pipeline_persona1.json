@@ -1,0 +1,15 @@
+{
+  "prompt_context": "optional context here",
+  "persona_premises": [
+    "The character works as a Risk Manager.",
+    "The character has over 12 years of experience in strategy and funding oversight.",
+    "The character has an ENTP personality type.",
+    "The character is detail-oriented.",
+    "The character is socially outgoing.",
+    "The character values efficient tools for study and work.",
+    "The character seeks recognition for contributions.",
+    "The character maintains a calm attitude.",
+    "The character becomes decisive when deadlines slip.",
+    "The character values transparency."
+    ]
+}

@@ -1,0 +1,27 @@
+services:
+  api:
+    build: .
+    environment:
+      DATABASE_URL: postgresql://postgres.eaknjohaqfrhxygadlfb:cAp_stOnE%40soft3888@aws-1-ap-southeast-2.pooler.supabase.com:5432/postgres
+    depends_on:
+      - pgbouncer
+    ports:
+      - "3000:3000"
+
+  pgbouncer:
+    image: bitnami/pgbouncer:1
+    environment:
+      - POSTGRESQL_HOST=aws-1-ap-southeast-2.pooler.supabase.com
+      - POSTGRESQL_PORT_NUMBER=5432
+      - POSTGRESQL_DATABASE=postgres
+      - POSTGRESQL_USERNAME=postgres.eaknjohaqfrhxygadlfb
+      - POSTGRESQL_PASSWORD=cAp_stOnE@soft3888
+      - PGBOUNCER_PORT=6432
+      - PGBOUNCER_POOL_MODE=session
+      - PGBOUNCER_MAX_CLIENT_CONN=1000
+      - PGBOUNCER_DEFAULT_POOL_SIZE=50
+      - PGBOUNCER_IGNORE_STARTUP_PARAMETERS=extra_float_digits
+      - PGBOUNCER_CLIENT_TLS_SSLMODE=disable
+      - PGBOUNCER_SERVER_TLS_SSLMODE=require
+    ports:
+      - "6432:6432"

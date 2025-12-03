@@ -1,0 +1,12 @@
+{
+  "answers": [
+    {
+      "id": "ex1",
+      "text":"I'd like to review the original scope and see what's absolutely essential to delivering a minimum viable product. The core dashboard features, analytics, and user settings are already quite a lot to tackle in the remaining four weeks. Adding an AI-powered recommendation engine on top of that would be a significant stretch.If we had to de-scope, I'd say we'd have to revisit the analytics feature. While it's crucial for understanding user behavior, it's also a complex component that could potentially delay the project further. Maybe we could simplify the analytics feature or prioritize the most critical aspects of it, like tracking user engagement and basic metrics. That would allow us to focus on the core dashboard features and user settings while still delivering a solid product."
+    },
+    {
+      "id": "ex2",
+      "text":"The sign-off on success for our project is the Product Owner, Rachel Lee. She's the one who ensures that the product meets the business requirements and that the features delivered are aligned with the overall product strategy. If we're adding a new feature, like the AI-powered recommendation engine, Rachel will need to be involved in the decision-making process and will ultimately sign off on its inclusion in the project scope."
+    }
+  ]
+}

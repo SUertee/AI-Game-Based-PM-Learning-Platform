@@ -1,0 +1,946 @@
+{
+  "model": "roberta-large-mnli",
+  "persona_premises": [
+    "The character works as a Risk Manager.",
+    "The character has over 12 years of experience in strategy and funding oversight.",
+    "The character has an ENTP personality type.",
+    "The character is detail-oriented.",
+    "The character is socially outgoing.",
+    "The character values efficient tools for study and work.",
+    "The character seeks recognition for contributions.",
+    "The character maintains a calm attitude.",
+    "The character becomes decisive when deadlines slip.",
+    "The character values transparency."
+  ],
+  "results": [
+    {
+      "id": "ex1",
+      "E": 0.0,
+      "C": 0.0,
+      "score": 0.5,
+      "hypotheses": [
+        "I get the excitement, but we can’t just slip this in",
+        "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+        "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+        "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+        "I’ll set a short meeting with the stakeholder and sponsor to decide based on data"
+      ],
+      "pairwise": [
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.797861426617509,
+            "CONTRADICTION": 0.19645207352922942,
+            "ENTAILMENT": 0.0056864998532615086
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.845055818951249,
+            "CONTRADICTION": 0.15027818090760997,
+            "ENTAILMENT": 0.004666000141141005
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8314947160913749,
+            "CONTRADICTION": 0.16256075137260026,
+            "ENTAILMENT": 0.005944532536024822
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9342103868104126,
+            "CONTRADICTION": 0.06268272328537627,
+            "ENTAILMENT": 0.003106889904211188
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9326637037735239,
+            "CONTRADICTION": 0.0631351006441794,
+            "ENTAILMENT": 0.004201195582296673
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.6696348917319744,
+            "CONTRADICTION": 0.323621666800282,
+            "ENTAILMENT": 0.006743441467743619
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8683097425543181,
+            "CONTRADICTION": 0.12576297880120835,
+            "ENTAILMENT": 0.005927278644473487
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.5600779072197468,
+            "CONTRADICTION": 0.4375942063636916,
+            "ENTAILMENT": 0.002327886416561584
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.966140207929145,
+            "CONTRADICTION": 0.023903043873879006,
+            "ENTAILMENT": 0.009956748196976032
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "I get the excitement, but we can’t just slip this in",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9393955865014813,
+            "CONTRADICTION": 0.05786471685243625,
+            "ENTAILMENT": 0.0027396966460824694
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8444952379276001,
+            "CONTRADICTION": 0.15385983499366768,
+            "ENTAILMENT": 0.0016449270787322902
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8422084035079863,
+            "CONTRADICTION": 0.15606330669434373,
+            "ENTAILMENT": 0.0017282897976698963
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7121151567178697,
+            "CONTRADICTION": 0.22914198087362816,
+            "ENTAILMENT": 0.058742862408502114
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.6866714012992982,
+            "CONTRADICTION": 0.2824829078707127,
+            "ENTAILMENT": 0.030845690829989215
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.6636362471363692,
+            "CONTRADICTION": 0.2869231871916763,
+            "ENTAILMENT": 0.04944056567195449
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.6640512541277972,
+            "CONTRADICTION": 0.3276546101108662,
+            "ENTAILMENT": 0.008294135761336587
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.643751417601092,
+            "CONTRADICTION": 0.3443650193262576,
+            "ENTAILMENT": 0.011883563072650375
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8116575149157612,
+            "CONTRADICTION": 0.18020099824565816,
+            "ENTAILMENT": 0.008141486838580575
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9238779361789496,
+            "CONTRADICTION": 0.07345825017056988,
+            "ENTAILMENT": 0.002663813650480523
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "With 4 weeks left, zero contingency, and $150k remaining, any new scope needs sponsor approval and an impact assessment",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7271889556525492,
+            "CONTRADICTION": 0.2438352740382444,
+            "ENTAILMENT": 0.0289757703092064
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9948831297154668,
+            "CONTRADICTION": 0.00396294593459946,
+            "ENTAILMENT": 0.0011539243499337185
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9290707059442771,
+            "CONTRADICTION": 0.06598215513313847,
+            "ENTAILMENT": 0.004947138922584398
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.5789990770220207,
+            "CONTRADICTION": 0.3196497750073537,
+            "ENTAILMENT": 0.10135114797062564
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9618243212309806,
+            "CONTRADICTION": 0.0326383548585201,
+            "ENTAILMENT": 0.005537323910499347
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.6974998918827684,
+            "CONTRADICTION": 0.2423673583734394,
+            "ENTAILMENT": 0.06013274974379224
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9655005574425243,
+            "CONTRADICTION": 0.03227825343323818,
+            "ENTAILMENT": 0.0022211891242374967
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.717097818851471,
+            "CONTRADICTION": 0.25338828563690186,
+            "ENTAILMENT": 0.029513895511627197
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8628295240758448,
+            "CONTRADICTION": 0.11146989693151575,
+            "ENTAILMENT": 0.025700578992639424
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9259678305332103,
+            "CONTRADICTION": 0.07028226983629211,
+            "ENTAILMENT": 0.003749899630497529
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "I’ll run a 48‑hour analysis with engineering: effort, cost, architectural risk, and impact on launch",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9530458740144199,
+            "CONTRADICTION": 0.04114024581449248,
+            "ENTAILMENT": 0.005813880171087696
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9221871433413374,
+            "CONTRADICTION": 0.06318794076755703,
+            "ENTAILMENT": 0.01462491589110557
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9419149966030571,
+            "ENTAILMENT": 0.03190280909359956,
+            "CONTRADICTION": 0.026182194303343294
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8933996175449506,
+            "ENTAILMENT": 0.08167304493769997,
+            "CONTRADICTION": 0.02492733751734949
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9111515268656333,
+            "CONTRADICTION": 0.046131291127341836,
+            "ENTAILMENT": 0.0427171820070249
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8945872137625485,
+            "ENTAILMENT": 0.08668077688656313,
+            "CONTRADICTION": 0.018732009350888378
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9659511570596067,
+            "CONTRADICTION": 0.025640275377055658,
+            "ENTAILMENT": 0.008408567563337651
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9014791409700035,
+            "CONTRADICTION": 0.06763310402918475,
+            "ENTAILMENT": 0.03088775500081176
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9173681735992432,
+            "CONTRADICTION": 0.04553178325295448,
+            "ENTAILMENT": 0.03710004314780235
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8945498290798433,
+            "CONTRADICTION": 0.0890566584327373,
+            "ENTAILMENT": 0.016393512487419437
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "Options: defer AI to a post-launch phase with a clear ROI case, or do a lightweight, non-blocking pilot behind a feature flag using a rules-based placeholder",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9631082057664759,
+            "CONTRADICTION": 0.024191981414197265,
+            "ENTAILMENT": 0.012699812819326847
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8903212353406287,
+            "CONTRADICTION": 0.10209408118535107,
+            "ENTAILMENT": 0.00758468347402024
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9955984630447618,
+            "CONTRADICTION": 0.0035359762659448127,
+            "ENTAILMENT": 0.0008655606892933399
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9969098841954845,
+            "CONTRADICTION": 0.0023573685141548323,
+            "ENTAILMENT": 0.0007327472903605815
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9963855284400813,
+            "CONTRADICTION": 0.0026870742088918225,
+            "ENTAILMENT": 0.0009273973510268989
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9918832501363398,
+            "CONTRADICTION": 0.006936493037932376,
+            "ENTAILMENT": 0.001180256825727807
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9963908734461839,
+            "CONTRADICTION": 0.0029058706531527494,
+            "ENTAILMENT": 0.0007032559006633119
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9962586671706821,
+            "CONTRADICTION": 0.0030407142132122832,
+            "ENTAILMENT": 0.0007006186161056053
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9429486826387596,
+            "CONTRADICTION": 0.05195557652585454,
+            "ENTAILMENT": 0.005095740835385786
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8410089125615775,
+            "CONTRADICTION": 0.15673521365438867,
+            "ENTAILMENT": 0.0022558737840337986
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "I’ll set a short meeting with the stakeholder and sponsor to decide based on data",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9975292324663015,
+            "CONTRADICTION": 0.0016424257001719984,
+            "ENTAILMENT": 0.0008283418335265103
+          }
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "E": 0.0,
+      "C": 0.25,
+      "score": 0.375,
+      "hypotheses": [
+        "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+        "With 4 weeks and $150k, probability and impact are high",
+        "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+        "Transparent, no surprises"
+      ],
+      "pairwise": [
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9968182935018017,
+            "CONTRADICTION": 0.0019295410980018507,
+            "ENTAILMENT": 0.001252165400196443
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9382146086364421,
+            "CONTRADICTION": 0.035839884351483525,
+            "ENTAILMENT": 0.02594550701207439
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8991009331904699,
+            "ENTAILMENT": 0.05854800561621806,
+            "CONTRADICTION": 0.042351061193312
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7963661922312432,
+            "CONTRADICTION": 0.18742855765989785,
+            "ENTAILMENT": 0.01620525010885904
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8796412283208874,
+            "ENTAILMENT": 0.07253815924720347,
+            "CONTRADICTION": 0.04782061243190905
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8690832642874077,
+            "CONTRADICTION": 0.11501547415703318,
+            "ENTAILMENT": 0.01590126155555919
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9039799291510948,
+            "ENTAILMENT": 0.06223778196356322,
+            "CONTRADICTION": 0.03378228888534192
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8206376876563265,
+            "CONTRADICTION": 0.16711117015944477,
+            "ENTAILMENT": 0.012251142184228781
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9168577006358006,
+            "ENTAILMENT": 0.06052333737582581,
+            "CONTRADICTION": 0.022618961988373508
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "Key risks: schedule slip that jeopardizes launch, cost overrun with no contingency, architectural rework (data pipelines/MLOps), degraded performance and latency, privacy/compliance exposure, model bias and explainability gaps, QA explosion, vendor lock‑in, and diverting focus from core readiness",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8970001139417265,
+            "CONTRADICTION": 0.08457664956353643,
+            "ENTAILMENT": 0.01842323649473705
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.993989462378008,
+            "CONTRADICTION": 0.0052453743245685375,
+            "ENTAILMENT": 0.0007651632974234961
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8876315074613073,
+            "CONTRADICTION": 0.10853139680399233,
+            "ENTAILMENT": 0.0038370957347003787
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7999502122383644,
+            "CONTRADICTION": 0.16068447234796257,
+            "ENTAILMENT": 0.03936531541367305
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7084894617984564,
+            "CONTRADICTION": 0.2403478568714591,
+            "ENTAILMENT": 0.051162681330084475
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7810472846031189,
+            "CONTRADICTION": 0.1786789447069168,
+            "ENTAILMENT": 0.040273770689964294
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.5507475815824804,
+            "CONTRADICTION": 0.4290589754143205,
+            "ENTAILMENT": 0.020193443003199144
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8535358277807661,
+            "CONTRADICTION": 0.13654630371634105,
+            "ENTAILMENT": 0.009917868502892915
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.839961818978546,
+            "CONTRADICTION": 0.13467165702328404,
+            "ENTAILMENT": 0.025366523998169938
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8978738243097252,
+            "CONTRADICTION": 0.09490130154123387,
+            "ENTAILMENT": 0.007224874149040954
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "With 4 weeks and $150k, probability and impact are high",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7187198675251066,
+            "CONTRADICTION": 0.25101293991448254,
+            "ENTAILMENT": 0.03026719256041083
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9977741383000484,
+            "ENTAILMENT": 0.001377104068461466,
+            "CONTRADICTION": 0.0008487576314901346
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9978127199605963,
+            "ENTAILMENT": 0.001311792023929083,
+            "CONTRADICTION": 0.0008754880154746804
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9739611065283441,
+            "ENTAILMENT": 0.01923606645952701,
+            "CONTRADICTION": 0.0068028270121288726
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9912141472123094,
+            "ENTAILMENT": 0.006708296948959074,
+            "CONTRADICTION": 0.002077555838731564
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9690360323116981,
+            "ENTAILMENT": 0.02566595534313611,
+            "CONTRADICTION": 0.005298012345165813
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9960101648082831,
+            "CONTRADICTION": 0.002318689088623532,
+            "ENTAILMENT": 0.0016711461030933371
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9886552643263603,
+            "CONTRADICTION": 0.005769993032621765,
+            "ENTAILMENT": 0.005574742641017947
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.973352705798556,
+            "CONTRADICTION": 0.019769692296365562,
+            "ENTAILMENT": 0.006877601905078393
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9951913631358595,
+            "CONTRADICTION": 0.0034493241479492073,
+            "ENTAILMENT": 0.0013593127161912984
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "I’d brief the stakeholder with a one‑page risk/impact summary tied to time, cost, and scope, plus clear options: 1) defer to Phase 2 post‑launch; 2) ship a feature‑flagged stub or rules‑based MVP; 3) proceed only with added budget and timeline, with success criteria and mitigation",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.9950605728711565,
+            "ENTAILMENT": 0.0042176528980925315,
+            "CONTRADICTION": 0.0007217742307510651
+          }
+        },
+        {
+          "premise": "The character works as a Risk Manager.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.7886670680964911,
+            "NEUTRAL": 0.1911259704991063,
+            "ENTAILMENT": 0.020206961404402528
+          }
+        },
+        {
+          "premise": "The character has over 12 years of experience in strategy and funding oversight.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.5701791707818863,
+            "NEUTRAL": 0.40553582167851726,
+            "ENTAILMENT": 0.024285007539596493
+          }
+        },
+        {
+          "premise": "The character has an ENTP personality type.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.810030578058156,
+            "NEUTRAL": 0.16756953267833305,
+            "ENTAILMENT": 0.02239988926351091
+          }
+        },
+        {
+          "premise": "The character is detail-oriented.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.7641000379353773,
+            "NEUTRAL": 0.21652994205146855,
+            "ENTAILMENT": 0.01937002001315415
+          }
+        },
+        {
+          "premise": "The character is socially outgoing.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.8733109414697072,
+            "NEUTRAL": 0.1092517174813317,
+            "ENTAILMENT": 0.017437341048961042
+          }
+        },
+        {
+          "premise": "The character values efficient tools for study and work.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.7588415174143073,
+            "NEUTRAL": 0.21536824187401027,
+            "ENTAILMENT": 0.02579024071168244
+          }
+        },
+        {
+          "premise": "The character seeks recognition for contributions.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.9369819181728771,
+            "NEUTRAL": 0.05616664896936463,
+            "ENTAILMENT": 0.0068514328577582405
+          }
+        },
+        {
+          "premise": "The character maintains a calm attitude.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.7510044146553668,
+            "ENTAILMENT": 0.14816654059663134,
+            "CONTRADICTION": 0.1008290447480018
+          }
+        },
+        {
+          "premise": "The character becomes decisive when deadlines slip.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "CONTRADICTION",
+          "scores": {
+            "CONTRADICTION": 0.9864980627796509,
+            "NEUTRAL": 0.011324588950306524,
+            "ENTAILMENT": 0.0021773482700425347
+          }
+        },
+        {
+          "premise": "The character values transparency.",
+          "hypothesis": "Transparent, no surprises",
+          "label": "NEUTRAL",
+          "scores": {
+            "NEUTRAL": 0.8119999936502426,
+            "ENTAILMENT": 0.1840444096745916,
+            "CONTRADICTION": 0.0039555966751658594
+          }
+        }
+      ]
+    }
+  ]
+}

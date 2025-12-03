@@ -1,0 +1,62 @@
+{
+  "emb_name": "all-mpnet-base-v2",
+  "normalize": true,
+  "threshold": 0.75,
+  "labels": {
+    "neg": 0,
+    "pos": 1
+  },
+  "training": {
+    "model": "LogReg+isotonic",
+    "embedding": "all-mpnet-base-v2",
+    "normalize": true,
+    "train_seconds": 0.015,
+    "test_size": 17,
+    "metrics": {
+      "auc": 0.9444,
+      "aupr": 0.9576,
+      "accuracy": 0.8235,
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8,
+      "brier": 0.1444,
+      "ece": 0.1655,
+      "confusion_matrix": [
+        [
+          8,
+          0
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "calibration_bins": {
+        "pred_mean": [
+          0.0,
+          0.0667,
+          0.0678,
+          0.0903,
+          0.1511,
+          0.1667,
+          0.4549,
+          0.7789,
+          0.8565,
+          1.0
+        ],
+        "true_mean": [
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    }
+  }
+}

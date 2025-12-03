@@ -1,0 +1,19 @@
+Project: Game-based Learning Platform.
+Timeline was 10 weeks.
+Two sprints were cut due to backend delays.
+New target is 8 weeks to hit a marketing milestone.
+Critical milestones: parallel development and contractor onboarding.
+Any time trade-offs must be reviewed with the sponsor.
+Scope: mobile app with secure auth, real-time notifications, basic analytics.
+All features must be production-ready and accessible.
+Any scope reduction needs stakeholder approval with risk mitigation.
+Budget cap: AUD 200,000 with no contingency.
+Extra funding needs executive approval and ROI.
+Contractor rates and overtime must be tracked and justified.
+Scenario request: add an AI recommendation engine to the dashboard.
+AI feature was not in scope and has no budget or timeline buffer.
+Stakeholder claims the AI could boost engagement and attract investors.
+Engineering warns of architectural complexity and delays.
+Remaining budget: AUD 150,000, no contingency.
+Time left: 4 weeks until launch.
+Current scope: core dashboard, analytics, user settings; AI excluded.

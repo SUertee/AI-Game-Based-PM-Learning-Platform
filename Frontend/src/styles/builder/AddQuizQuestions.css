@@ -1,0 +1,180 @@
+.quiz-questions-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  font-family: var(--body-font);
+  color: var(--text-color);
+}
+
+.quiz-length-display {
+  background-color: var(--primary-sub);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+/* Form area */
+.form-container {
+  flex: 1;
+  background-color: var(--primary);
+  padding: var(--mb-3);
+  min-height: 100vh;
+}
+
+.form-content {
+  background-color: var(--primary-sub);
+  padding: var(--mb-1-5);
+  border-radius: var(--radius);
+}
+
+/* Titles */
+.form-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 0;
+}
+
+.form-subtitle {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-normal);
+  margin-bottom: var(--mb-1-5);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between; /* label left, button right */
+  align-items: center; /* vertically center them */
+  margin-bottom: 0.5rem;
+}
+
+/* Question card */
+.question-card {
+  background-color: var(--primary);
+  border-radius: var(--radius);
+  padding: var(--mb-2);
+  margin-bottom: var(--mb-0-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.question-label {
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-5);
+  display: block;
+  color: var(--text-color);
+}
+
+.question-card input[type="text"],
+.question-card textarea {
+  width: 100%;
+  padding: var(--mb-0-5);
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--secondary-sub);
+  border-radius: var(--radius-sm);
+}
+
+.question-card textarea {
+  min-height: 4rem;
+  resize: vertical;
+}
+
+.question-card input:focus,
+.question-card textarea:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+/* Options list */
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--mb-1);
+  margin-top: var(--mb-1);
+}
+
+.option-row input {
+  flex: 1;              /* take remaining space */
+  min-width: 0;         /* allow shrinking instead of forcing wrap */
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: var(--mb-1);
+}
+
+.option-label {
+  min-width: 70px;
+  font-weight: var(--font-medium);
+}
+
+/* Correct button */
+.correct-btn {
+  background-color: var(--text-color);
+  color: var(--primary);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: auto;
+}
+
+.correct-btn.selected {
+  background-color: var(--accent);
+  color: var(--text-color);
+}
+
+.correct-btn:hover {
+  background-color: var(--accent);
+  color: var(--text-color);
+}
+
+.button-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* Hover effect */
+.button:hover {
+  background-color: var(--accent-dark);
+  transform: translateY(-1px);
+}
+
+/* Add/Remove question buttons */
+.add-question,
+.remove-question {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: var(--mb-0-75) var(--mb-1-5);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-question {
+  margin-top: 21px;
+}
+
+/* Save button */
+.save-button {
+  background-color: var(--accent);
+  color: var(--text-color);
+  padding: var(--mb-0-75) var(--mb-1-5);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: var(--font-semi-bold);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.save-button:hover,
+.add-question:hover,
+.remove-question:hover {
+  background-color: #c9aa5a;
+}

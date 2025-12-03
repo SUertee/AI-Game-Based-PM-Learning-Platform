@@ -1,0 +1,5 @@
+1. Set local flag in api/ollama.js to False
+2. Start ollama GUI and turn on the network setting
+3. Run the command `ngrok http 11434` to open the port 11434 (what ollama runs on) to the internet
+4. Copy the public url (e.g. https://de91661c8bef.ngrok-free.app) and past into ollama.js
+5. Save all code and run `vercel --prod` in terminal

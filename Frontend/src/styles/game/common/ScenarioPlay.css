@@ -1,0 +1,336 @@
+:root{
+  --blue: #6EA2C8;
+  --ink: #1D3153;
+  --gold: #f1f0ef;
+  --box: #E4E9F0;
+}
+
+/* ==== MAIN ROUNDED CARD ==== */
+.scchat-card{
+  width:min(1151px, 100%);
+  background: var(--box);
+  border-radius:30px;
+  padding:20px 24px 18px;
+  margin-top:24px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.06);
+}
+
+/* ==== HEADER ==== */
+.scchat-header h1{
+  font:700 30px/1.4 Roboto, system-ui, sans-serif;
+  color:var(--ink);
+  margin:4px 0 4px;
+}
+.scchat-header p{
+  font:400 20px/1.4 Roboto, system-ui, sans-serif;
+  color:var(--ink);
+  margin:0 0 8px;
+}
+
+/* ==== 2-COLUMN BODY ==== */
+.scchat-body{
+  display:grid;
+  grid-template-columns: 260px 20px 1fr;
+  gap:18px;
+  min-height: 60px;
+}
+
+/* ==== VERTICAL DIVIDER ==== */
+.scchat-divider{
+  width:0;
+  border-left:3px solid #fff;
+  margin:0 6px;
+}
+
+/* ==== PERSONAS COLUMN ==== */
+.scchat-personas h2{
+  font:700 20px/1.4 Roboto, system-ui, sans-serif; /* slightly smaller */
+  color:var(--ink);
+  margin:8px 0 10px;
+}
+
+.persona-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;          /* tighter spacing */
+  max-height: 550px;  /* reduced so chat gets more space */
+  overflow:auto;
+  padding-right:6px;
+}
+
+/* Each list row wrapper (brief OR expanded) */
+.persona-item{
+  position: relative;
+  transition: padding .2s ease;
+}
+.persona-item.is-open{ padding-bottom: 2px; }
+
+/* Brief card container */
+.persona-brief-card{
+  background:#fff;
+  border-radius:16px;          /* slightly smaller curve */
+  padding:8px 10px;            /* was 10px */
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.persona-brief-name{
+  font:700 16px/1.3 Roboto, system-ui, sans-serif; /* was 18px */
+  color: var(--ink);
+}
+
+.persona-brief-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.persona-brief-role{
+  font:600 13px/1.4 Roboto, system-ui, sans-serif; /* was 14px */
+  color:#4a5870;
+  opacity:.95;
+}
+
+/* Expand button */
+.persona-expand{
+  background: var(--gold);
+  color:#fff;
+  border:0;
+  border-radius:8px;
+  padding:3px 8px;             /* more compact */
+  font:600 12px/1.2 Roboto, system-ui, sans-serif;
+  cursor:pointer;
+  transition: filter .15s ease, transform .02s ease;
+}
+.persona-expand:hover{ filter:brightness(.98); }
+.persona-expand:active{ transform: translateY(1px); }
+.persona-expand:focus-visible{
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Expanded inline persona card */
+.persona-inline{
+  position: relative;
+  display:inline-block;
+  padding:0;
+}
+.persona-inline .persona.sm{
+  width:240px;   /* fit inside 260px column comfortably */
+  height:320px;  /* maintain aspect ratio */
+}
+.persona-item.is-open .persona-inline{
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.12));
+}
+
+/* Hide button on expanded card */
+.persona-hide{
+  position:absolute;
+  top:8px;
+  right:8px;
+  width:38px;
+  height:28px;
+  display:grid;
+  place-items:center;
+  background:var(--gold);
+  color:#fff;
+  border:0;
+  border-radius:8px;
+  font:400 14px/1 Roboto, system-ui, sans-serif;
+  cursor:pointer;
+  transition: filter .15s ease, transform .02s ease;
+}
+.persona-hide:hover{ filter:brightness(.98); }
+.persona-hide:active{ transform: translateY(1px); }
+.persona-hide:focus-visible{
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* Smooth open/close height (optional): */
+.persona-item{
+  transition: padding .2s ease;
+}
+.persona-item.is-open{
+  padding-bottom: 2px;
+}
+
+/* (Legacy) Generic chip styles used elsewhere (quick Qs) */
+.chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:4px 10px;
+  border-radius:10px;
+  background: var(--blue);
+  color:#fff;
+  font:400 16px/1.4 Roboto, system-ui, sans-serif;
+}
+.chip-btn{
+  background:#fff;
+  border-radius:10px;
+  color:var(--ink);
+  border:0;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+  cursor:pointer;
+}
+
+/* ==== CHAT PANEL ==== */
+.scchat-panel{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top: 20px;
+}
+
+.scchat-messages{
+  background: var(--ink);
+  border:2px solid var(--box);
+  border-radius:10px;
+  padding:10px;
+  min-height: 340px;
+  max-height: 360px;
+  overflow:auto;
+  color:#E4E9F0;
+  position:relative;
+}
+
+/* Panel label (top left inside chat box) */
+.panel-label {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  color: var(--gold);
+  font: 600 16px/22px "Open Sans", system-ui, sans-serif; /* unified */
+}
+
+/* Hint bubble (first system hint) */
+.message-hint {
+  margin: 30px 6px 10px;
+  background: #fff;
+  color: var(--ink);
+  border-radius: 10px;
+  padding: 10px 12px;
+  max-width: 690px;
+  font: 400 16px/22px "Open Sans", system-ui, sans-serif; /* unified */
+  box-shadow: 0 1px 2px rgba(0,0,0,.12);
+}
+
+/* Stream bubbles */
+.message-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 6px;
+}
+
+.msg{
+  align-self: flex-start;   /* default: left side */
+  text-align: left;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  max-width: 700px;
+}
+.msg .msg-meta{
+  font: 600 16px/22px "Open Sans", system-ui, sans-serif; /* unified */
+  opacity:.8;
+}
+.msg .msg-bubble {
+  background: #fff;
+  color: #101820;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: 400 16px/22px "Open Sans", system-ui, sans-serif; /* unified */
+  max-width: 690px;
+}
+
+.msg.user .msg-bubble {
+  background: #E9F2F9;
+}
+
+/* USER messages should align to the right */
+.msg.user{
+  align-self: flex-end;   /* push the whole message block to the right */
+  text-align: right;      /* align the "You" label right */
+}
+
+
+/* ==== QUICK QUESTION ROWS ==== */
+.scchat-quickqs{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top: 50px;
+}
+.chip-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.chip-row .chip{
+  background:#fff;
+  color:var(--ink);
+  border-radius:10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.08);
+}
+.chip-row .chip:hover{ filter:brightness(0.98); }
+
+/* ==== COMPOSER ==== */
+.scchat-composer{
+  display:grid;
+  grid-template-columns: 1fr 72px;
+  gap:12px;
+  align-items:center;
+}
+.composer-input{
+  background: var(--ink);
+  border:2px solid var(--box);
+  color:#E4E9F0;
+  border-radius:10px;
+  height:43px;
+  padding:0 12px;
+  font:400 16px/22px "Open Sans", system-ui, sans-serif;
+}
+.composer-input::placeholder{ color:#E4E9F0; opacity:.9; }
+.btn-ask{
+  height:43px;
+  border:0;
+  border-radius:10px;
+  background: var(--gold);
+  color:var(--ink);
+  font:600 16px/22px "Open Sans", system-ui, sans-serif;
+  cursor:pointer;
+}
+
+/* ==== FOOTER ==== */
+.scchat-footer{
+  display:flex;
+  justify-content:flex-end;
+}
+.btn-end{
+  height:43px;
+  padding:0 18px;
+  border-radius:10px;
+  border:0;
+  background: var(--gold);
+  color:var(--ink);
+  font:600 16px/22px "Open Sans", system-ui, sans-serif;
+  cursor:pointer;
+}
+
+/* ==== ACCESSIBILITY FOCUS ==== */
+button:focus-visible, .chip-btn:focus-visible, .composer-input:focus-visible{
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 1100px){
+  .scchat-body{
+    grid-template-columns: 1fr;
+  }
+  .scchat-divider{ display:none; }
+}

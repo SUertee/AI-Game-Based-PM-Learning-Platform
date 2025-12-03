@@ -1,0 +1,24 @@
+/* src/theme.css */
+:root {
+  --primary-700: #2f6fb6;
+
+  --primary: #ffffff;       /* 60% - base background */
+  --primary-sub: #e4e9f0;   /* subtle background, cards, surfaces */
+  --secondary: #1d3153;     /* 30% - strong text, headers */
+  --secondary-sub: #6ea2c8; /* accents, highlights */
+
+  --accent: #ddbd65;        /* 10% - buttons, CTAs */
+
+
+  --bg: #f5f7fa;
+  --surface: #ffffff;
+  --text: #222222;
+  --muted: #6b7280;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+}

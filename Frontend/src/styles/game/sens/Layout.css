@@ -1,0 +1,57 @@
+/* default */
+.app-shell{ max-width:1120px; margin:0 auto; padding:24px 28px }
+
+/* when ScenarioPlay is mounted */
+.shell-wide .app-shell{
+  max-width: 1440px;     /* or 1600px if you want extra-wide */
+  padding: 16px 24px;    /* optional: slightly tighter gutters */
+}
+
+.topbar{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.backbtn,
+.nextbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 24px;
+  padding: 10px 16px;
+  background: #f0f3f8;
+  color: #274a7e;
+  font-weight: 600;
+
+  /* revised font */
+  font-size: 16px;   /* was default/smaller */
+  line-height: 1.4;  /* keeps vertical rhythm */
+}
+.backbtn:hover,
+.nextbtn:hover {
+  cursor: pointer;
+}
+
+
+.nextbtn{background:var(--accent);color:#21324d}
+.content{background:white;border-radius:12px;padding:0;width:100%}
+.panel{
+  background:var(--panel); padding:28px;border-radius:12px; 
+  box-shadow:0 2px 0 rgba(0,0,0,.03); text-align:center
+}
+.h1{font-size:36px;font-weight:800;color:var(--brand);margin:8px 0 12px}
+.h2{font-size:28px;font-weight:800;color:var(--brand);margin:0 0 14px}
+.center-actions{display:flex;justify-content:flex-end;margin:24px 0}
+.lead{font-size:18px;color:#263e63;line-height:1.5;max-width:720px;margin:0 auto}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:28px}
+.kard{background:white;border-radius:16px;padding:20px;border:1px solid var(--line)}
+.meta{background:var(--panel);border-radius:14px;padding:18px}
+.badge{display:inline-block;background:#edf2fb;padding:4px 10px;border-radius:999px;color:#38507e;font-weight:600}
+.footer-nav{display:flex;justify-content:space-between;align-items:center;margin:24px 0 4px}
+.helper{color:var(--muted);font-size:14px}
+.right{display:flex;gap:12px}
+.cta{border:none;background:var(--accent);padding:14px 24px;border-radius:12px;font-weight:700}
+.cta:hover{
+  cursor: pointer;
+}
+.cta.secondary{background:#f0f3f8;color:#274a7e}
+.note-ok{color:var(--ok);font-weight:700}
+.note-bad{color:var(--danger);font-weight:700}
