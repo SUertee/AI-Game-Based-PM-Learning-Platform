@@ -15,7 +15,7 @@ export default function StudentDashboard() {
     useEffect(() => {
         async function fetchDashboard() {
             try {
-                const response = await fetch(`http://localhost:3000/student/overview/${sid}`);
+                const response = await fetch(`http://localhost:4000/student/overview/${sid}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error: ${response.status}`);
                 }

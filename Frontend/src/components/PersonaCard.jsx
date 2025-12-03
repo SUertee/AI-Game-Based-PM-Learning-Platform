@@ -1,5 +1,5 @@
 // src/components/PersonaCard.jsx
-import "../styles/game/common/PersonaCard.css"; // contains the persona styles you already wrote
+import "../styles/game/scenario/PersonaCard.css"; // contains the persona styles you already wrote
 
 export default function PersonaCard({ name, role, avatar, profile, traits, motivation, attitude, size = "sm" }) {
 

@@ -10,7 +10,7 @@ export default function GameSelection() {
     useEffect(() => {
         async function fetchGames() {
             try {
-                const response = await fetch('http://localhost:3000/games/all');
+                const response = await fetch('http://localhost:4000/games/all');
                 if (!response.ok) throw new Error(`HTTP error ${response.status}`);
                 const data = await response.json();
                 console.log(data)

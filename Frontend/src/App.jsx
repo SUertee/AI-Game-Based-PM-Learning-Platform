@@ -11,31 +11,31 @@ import StudentDashboard from './pages/student/StudentDashboard.jsx';
 import StudentReport from "./pages/student/StudentReport.jsx";
 import StudentProfile from "./pages/student/StudentProfile.jsx";
 import GameSelection from "./pages/student/StudentGames.jsx";
-import GameSummary from "./pages/student/GameSummary.jsx";
 
 // Educator
 import EducatorDashboard from "./pages/educator/EducatorDashboard.jsx";
 import EducatorGames from "./pages/educator/EducatorGames.jsx";
 import EducatorProfile from "./pages/educator/EducatorProfile.jsx";
 
-// Game (Harry)
-import ScenarioIntro from "./pages/game/harry/ScenarioIntro.jsx";
-import ScenarioPlay from "./pages/game/harry/ScenarioPlay.jsx";
-import TaskDecision from "./pages/game/harry/TaskDecision.jsx";
-import Evaluation from "./pages/game/harry/TaskEvaluation.jsx";
+// Game (Scenario flow)
+import ScenarioIntro from "./pages/game/scenario/ScenarioIntro.jsx";
+import ScenarioPlay from "./pages/game/scenario/ScenarioPlay.jsx";
+import TaskDecision from "./pages/game/evaluation/TaskDecision.jsx";
+import Evaluation from "./pages/game/evaluation/TaskEvaluation.jsx";
 
-// Game (Sens)
-import ProjectIntroduction from "./pages/game/sens/GameIntro.jsx";
+// Game (Experience/brief + quiz)
+import ProjectIntroduction from "./pages/game/GameIntro.jsx";
+import GameSummary from "./pages/game/evaluation/GameSummary.jsx";
 
 // Game builder
-import BuilderLayout from "./pages/builder/jerry/Layout.jsx";
-import GameConfiguration from "./pages/builder/jerry/game_config.jsx";
-import PersonaSelection from "./pages/builder/jerry/personaSelection.jsx";
-import QuizConfiguration from "./pages/builder/fideris/QuizConfiguration/QuizConfigForm.jsx";
-import AddQuizQuestions from './pages/builder/fideris/QuizCreation/AddQuizQuestions.jsx';
-import ScenarioIntroduction from './pages/builder/fideris/ScenarioBuilder/ScenarioIntroduction.jsx';
-import ActionTasks from './pages/builder/fideris/TasksBuilder/ActionTasks.jsx';
-import ExpectedOutcomes from './pages/builder/fideris/TasksBuilder/ExpectedOutcomes.jsx';
+import BuilderLayout from "./pages/builder/layout/Layout.jsx";
+import GameConfiguration from "./pages/builder/GameConfig.jsx";
+import PersonaSelection from "./pages/builder/persona/PersonaSelection.jsx";
+import QuizConfiguration from "./pages/builder/quiz/QuizConfig.jsx";
+import QuizQuestions from './pages/builder/quiz/QuizQuestions.jsx';
+import ScenarioBuilder from './pages/builder/scenario/ScenarioBuilder.jsx';
+import ActionTasks from './pages/builder/task/TaskActions.jsx';
+import ExpectedOutcomes from './pages/builder/task/TaskOutcomes.jsx';
 
 import loginImg from "./assets/Login_logo.png";
 import signupImg from "./assets/Login_logo.png";
@@ -70,8 +70,8 @@ export default function App() {
                     <Route path="/persona-selection"element={<PersonaSelection/>} /> 
                 </Route>
                 <Route path="/quiz-builder" element={<QuizConfiguration />} />
-                 <Route path="/quiz-questions" element={<AddQuizQuestions/>} />
-                    <Route path="/scenario-introduction" element={<ScenarioIntroduction/>} />
+                 <Route path="/quiz-questions" element={<QuizQuestions/>} />
+                    <Route path="/scenario-introduction" element={<ScenarioBuilder/>} />
                     <Route path="/action-tasks" element={<ActionTasks/>} />
                     <Route path="/expected-outcomes" element={<ExpectedOutcomes/>} />
             </Routes>

@@ -18,7 +18,7 @@ export default function EducatorGames() {
     useEffect(() => {
         async function fetchAllGames() {
             try {
-                const res = await fetch("http://localhost:3000/games/all");
+                const res = await fetch("http://localhost:4000/games/all");
                 if (!res.ok) {
                     console.error("Fetch /games failed with status", res.status);
                     setLoadFailed(true);

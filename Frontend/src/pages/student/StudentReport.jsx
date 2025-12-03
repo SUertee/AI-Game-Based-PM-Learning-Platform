@@ -22,7 +22,7 @@ export default function StudentReport() {
         setError(null);
 
         try {
-            const res = await fetch(`http://localhost:3000/student/reports/${id}`);
+            const res = await fetch(`http://localhost:4000/student/reports/${id}`);
             if (!res.ok) throw new Error(`Failed to fetch: ${res.statusText}`);
             const data = await res.json();
             setRecords(data);
@@ -45,7 +45,7 @@ export default function StudentReport() {
             setSummary({ averageQuiz: avgQuiz, averageScenario: avgScenario, attempts });
 
             // Fetch latest saved overall strengths/weaknesses
-            const aggRes = await fetch(`http://localhost:3000/student/overview/${id}`);
+            const aggRes = await fetch(`http://localhost:4000/student/overview/${id}`);
             if (aggRes.ok) {
                 const aggData = await aggRes.json();
                 setOverallSW(aggData.strengthAndWeakness || 'None');
@@ -80,7 +80,7 @@ export default function StudentReport() {
             const allGameSW = records.map(r => r.strengthAndWeakness || '').join('\n\n');
             const swReport = await generateStrengthsAndWeaknesses(allGameSW);
 
-            const res = await fetch(`http://localhost:3000/student/performance/${id}`, {
+            const res = await fetch(`http://localhost:4000/student/performance/${id}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ strengthAndWeakness: swReport })

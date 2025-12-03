@@ -72,8 +72,8 @@ export default function Auth({ mode = "login" }) {
     try {
       // TODO: set your backend base URL and endpoints
       const url = isLogin
-        ? "http://localhost:3000/user/login"
-        : "http://localhost:3000/user/signup";
+        ? "http://localhost:4000/user/login"
+        : "http://localhost:4000/user/signup";
 
       const identity = username;
       const hashed = await hashPassword(identity, password);
