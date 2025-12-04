@@ -261,7 +261,7 @@ app.use(cors({
   });
 
 
-
+  // User login
   app.post('/user/login', async (req, res) => {
   const { username, password } = req.body || {};
   if (typeof username !== 'string' || username.trim() === '' ||
@@ -375,6 +375,7 @@ app.get("/persona/all", async (req, res) => {
     }
   })
 
+  // student overview
   app.get('/student/overview/:id', async (req, res) => {
     const client = await db.getClient();
     try {
@@ -440,7 +441,7 @@ app.get("/persona/all", async (req, res) => {
     }
   });
 
-
+  // student reports
   app.get('/student/reports/:id', async (req, res) => {
     try{
       const {rows} = await db.query(
@@ -460,6 +461,7 @@ app.get("/persona/all", async (req, res) => {
     }
   })
 
+  // student performance update
   app.post('/student/performance/:id', async (req, res) => {
     const { strengthAndWeakness } = req.body;
     if (typeof strengthAndWeakness !== "string" || strengthAndWeakness.trim() === "") {

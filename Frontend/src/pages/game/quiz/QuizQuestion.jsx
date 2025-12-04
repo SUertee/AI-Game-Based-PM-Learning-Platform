@@ -1,6 +1,6 @@
 // src/pages/QuizQuestion.jsx
 import React, { useMemo, useState, useEffect } from "react";
-import "../../../styles/game/project/Cards.css";
+import "../../../styles/game/layout/Cards.css";
 
 export default function QuizQuestion({ gameData, ctx }) {
   const {

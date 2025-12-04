@@ -1,6 +1,6 @@
 // src/pages/ProjectBriefDetails.jsx
 import React, { useMemo, useState } from "react";
-import "../../../styles/game/project/Cards.css";
+import "../../../styles/game/layout/Cards.css";
 import GPLayout from "../layout/GPLayout.jsx";
 import "../../../styles/game/layout/GamePlay.css";
 

@@ -1,6 +1,6 @@
 
 import React, { useMemo } from "react";
-import "../../../styles/game/project/Cards.css";
+import "../../../styles/game/layout/Cards.css";
 
 export default function QuizIntro({ gameData, ctx }) {
   const { qi = 0, quiz, goNext } = ctx || {};

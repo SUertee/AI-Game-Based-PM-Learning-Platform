@@ -1,4 +1,4 @@
-# PM Game-Based Learning Platform (Frontend)
+# PM Game-Based Learning Platform
 
 An interactive web app that teaches project management through a game flow: students read briefs, play scenarios, make decisions, and get AI feedback; educators build and manage the content in the same UI.
 

@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import "../../../styles/game/project/Layout.css";
+import "../../../styles/game/layout/Layout.css";
 
 export default function QuizResultFail({ gameData, ctx }) {
     const { qi = 0, quiz: quizInCtx, outcome, goTo } = ctx || {};

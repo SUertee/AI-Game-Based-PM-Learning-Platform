@@ -1,7 +1,7 @@
 // src/pages/ProjectBriefIntro.jsx
 import React, { useMemo } from 'react';
-import '../../../styles/game/project/Layout.css';
-import '../../../styles/game/project/Cards.css';
+import '../../../styles/game/layout/layout.css';
+import '../../../styles/game/layout/Cards.css';
 
 export default function ProjectBriefIntro({ gameData, ctx }) {
   const title = (gameData && gameData.gameTitle) || 'Project Brief';
